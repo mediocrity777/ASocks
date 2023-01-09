@@ -602,6 +602,7 @@ template {
 
 .mainscreen {
   padding-top: 40px;
+  margin-bottom: 80px;
 }
 .mainscreen__container {
   display: flex;
@@ -642,6 +643,38 @@ template {
 }
 .mainscreen__img-small {
   display: none;
+}
+
+.advantages {
+  margin-bottom: 200px;
+}
+.advantages__list {
+  padding: 36px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f3f5f8;
+  box-shadow: 0px 16px 32px -6px rgba(7, 0, 28, 0.02), 0px 8px 16px -3px rgba(7, 0, 28, 0.03), 0px 4px 8px -1px rgba(7, 0, 28, 0.03);
+  border-radius: 24px;
+  text-align: center;
+}
+.advantages__list dt {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 39px;
+  color: #485064;
+}
+.advantages__list dd {
+  line-height: 140%;
+}
+.advantages__list div {
+  padding: 0 85px;
+  border-right: 2px solid rgba(209, 200, 251, 0.4);
+  border-radius: 2px;
+  height: 87px;
+}
+.advantages__list div:last-child {
+  border: none;
 }
 
 body {
