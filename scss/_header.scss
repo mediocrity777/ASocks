@@ -1,0 +1,23 @@
+.header {
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding-top: 24px;
+	}
+}
+
+.menu {
+	&__list {
+		display: flex;
+		gap: 0 40px;
+	}
+
+	&__list-link {
+		text-decoration: none;
+		color: #202027;
+		font-variant: small-caps;
+		line-height: 20px;
+		letter-spacing: 0.01em;
+	}
+}
