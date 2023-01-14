@@ -771,6 +771,41 @@ template {
   top: -35%;
 }
 
+.proxy__title {
+  margin-bottom: 80px;
+}
+.proxy__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.proxy__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 285px;
+  height: 350px;
+  box-shadow: 0px 16px 32px -6px rgba(7, 0, 28, 0.02), 0px 8px 16px -3px rgba(7, 0, 28, 0.03), 0px 4px 8px -1px rgba(7, 0, 28, 0.03);
+  border-radius: 24px;
+}
+.proxy__item-img {
+  align-items: center;
+  justify-content: center;
+}
+.proxy__item-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+}
+.proxy__item-text {
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #f9fbfd;
+  display: none;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
