@@ -104,3 +104,15 @@
 	right: -18%;
 	top: -35%;
 }
+
+.premium::after {
+	content: "";
+	background: url(../images/circles-right.svg);
+	background-repeat: no-repeat;
+	position: absolute;
+	z-index: -1;
+	width: 684px;
+	height: 684px;
+	left: -20%;
+	top: 72%;
+}

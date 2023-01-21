@@ -21,8 +21,8 @@
 			0px 4px 8px -1px rgba(7, 0, 28, 0.03);
 		border-radius: 24px;
 		cursor: pointer;
-		padding-top: 60px;
 		transition-property: transform;
+		padding: 60px 16px 20px;
 	}
 
 	&__item--active {
@@ -34,6 +34,7 @@
 		display: block;
 		animation: slide-from-bottom 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 		transition: transform 0.3s ease 0.3s;
+		overflow-y: scroll;
 	}
 
 	@keyframes slide-from-bottom {
@@ -45,7 +46,7 @@
 			min-height: 0;
 			opacity: 0;
 			padding: 0;
-			transform: translateY(1000px);
+			transform: translateY(100px);
 		}
 		30% {
 			flex: 0 0 0%;
@@ -54,7 +55,7 @@
 			margin: 0;
 			opacity: 0;
 			padding: 0;
-			transform: translateY(1000px);
+			transform: translateY(100px);
 		}
 		100% {
 			flex: 0 0 0%;
@@ -69,6 +70,13 @@
 
 	&__item--active &__item-img img {
 		transform: scale(0.8);
+		transition: transform 0.5s ease;
+	}
+
+	&__item--active &__item-img--image-6 img,
+	&__item--active &__item-img--image-8 img {
+		width: 180px;
+		height: 170px;
 	}
 
 	&__item-img {

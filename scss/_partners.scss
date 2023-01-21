@@ -1,0 +1,88 @@
+.partners {
+	text-align: center;
+	margin-bottom: 200px;
+	&__title {
+		margin-bottom: 80px;
+	}
+
+	&__slider {
+		height: 200px;
+		margin-bottom: 80px;
+	}
+
+	&__slider-wrapper {
+		display: flex;
+		align-items: center;
+	}
+
+	&__slide {
+		background: radial-gradient(68.85% 126.58% at 92.36% 8.2%, rgba(251, 211, 0, 0.1) 0%, rgba(255, 168, 0, 0) 100%),
+			radial-gradient(42.62% 139.24% at 0% 36.07%, rgba(112, 0, 254, 0.1) 0%, rgba(66, 0, 255, 0) 100%),
+			radial-gradient(40.98% 40.98% at 45.86% 100%, rgba(0, 255, 25, 0.1) 0%, rgba(0, 255, 25, 0) 100%);
+		box-shadow: 0px 19.5615px 39.1231px -19.5615px rgba(7, 0, 28, 0.08),
+			0px 9.78077px 19.5615px -9.78077px rgba(7, 0, 28, 0.08), 0px 4.89039px 9.78077px -4.89039px rgba(7, 0, 28, 0.08);
+		backdrop-filter: blur(12.226px);
+		border-radius: 16px;
+		width: auto;
+		height: auto;
+		padding: 22px 25px;
+		cursor: pointer;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__slide-text {
+		display: none;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 140%;
+		color: #485064;
+	}
+
+	&__btn {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 20px;
+		text-align: center;
+		color: #7c4eff;
+		padding: 16px 41px 16px 26px;
+		border: 1px solid #7c4eff;
+		border-radius: 12px;
+		position: relative;
+	}
+
+	&__btn::after {
+		content: "";
+		position: absolute;
+		background-image: url(/images/arrow.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		width: 8px;
+		height: 10px;
+		right: 24px;
+		top: 22px;
+	}
+}
+
+.swiper-slide-active {
+	width: 301px;
+	height: 135px;
+	background: rgba(124, 78, 255, 0.1);
+	box-shadow: 0px 5px 5px -2.44519px rgba(124, 78, 255, 0.08), 0px 10px 10px -4.89039px rgba(124, 78, 255, 0.08),
+		0px 20px 20px -9.78077px rgba(124, 78, 255, 0.08), 0px 40px 40px -19.5615px rgba(124, 78, 255, 0.08);
+	backdrop-filter: blur(15px);
+	border-radius: 20px;
+	flex-direction: column;
+	align-items: start;
+}
+
+.swiper-slide-active .partners__slide-img {
+	display: block;
+	margin-bottom: 16px;
+}
+
+.swiper-slide-active .partners__slide-text {
+	display: block;
+	text-align: left;
+}
