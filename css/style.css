@@ -1064,6 +1064,42 @@ template {
   text-align: left;
 }
 
+.features {
+  margin-bottom: 200px;
+}
+.features__title {
+  margin-bottom: 80px;
+}
+.features__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 60px 0;
+}
+.features__item {
+  align-items: center;
+  display: flex;
+  flex-basis: 570px;
+}
+.features__item-img {
+  margin-right: 25px;
+  min-width: 85px;
+  text-align: center;
+}
+.features__item-title {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+  color: #485064;
+  margin-bottom: 8px;
+}
+.features__item-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #202027;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
