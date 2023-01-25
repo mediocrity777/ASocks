@@ -582,6 +582,47 @@ template {
   display: none;
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #202027;
+  background-color: #f9fbfd;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 42px;
+  line-height: 51px;
+  color: #202027;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+.title__span {
+  color: #16e09e;
+}
+
+.btn {
+  padding: 17px 40px;
+  background: linear-gradient(230.52deg, #926bff 21.73%, #7c4eff 72.58%);
+  box-shadow: 0px 8px 6px -6px rgba(86, 76, 234, 0.6), 0px 14px 12px -8px rgba(86, 76, 234, 0.6), 0px 22px 24px -16px rgba(86, 76, 234, 0.6);
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  font-variant: small-caps;
+  color: #ffffff;
+}
+
 .header__container {
   display: flex;
   justify-content: space-between;
@@ -1100,43 +1141,164 @@ template {
   color: #202027;
 }
 
-body {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
+.traffic {
+  margin-bottom: 200px;
+}
+.traffic__container {
+  padding: 80px;
+  background: #f3f5f8;
+  border-radius: 48px;
+  max-width: 1200px;
+}
+.traffic__body {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+.traffic__info {
+  flex-basis: 655px;
+  padding-left: 12px;
+}
+.traffic__title {
+  text-align: left;
+  margin-bottom: 24px;
+}
+.traffic__text {
+  margin-bottom: 77px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
   color: #202027;
-  background-color: #f3f5f8;
-  overflow-x: hidden;
 }
-
-.container {
-  max-width: 1240px;
-  padding: 0 20px;
-  margin: 0 auto;
+.traffic__slider {
+  position: relative;
+  width: 330px;
 }
-
-.title {
+.traffic__color-fill {
+  background: url(/images/progress-fill.png) no-repeat;
+  height: 18px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 330px;
+}
+.traffic__range {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url(../images/progressbar.svg);
+  height: 18px;
+  width: 100%;
+  position: relative;
+}
+.traffic__range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  z-index: 3;
+  width: 36px;
+  height: 36px;
+  position: relative;
+}
+.traffic__range-gb, .traffic__range-price {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+  color: #7c4eff;
+  position: absolute;
+  transform: translateX(-50%);
+}
+.traffic__range-gb {
+  top: -40px;
+}
+.traffic__range-price {
+  bottom: -40px;
+}
+.traffic__progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.traffic__progress-img {
+  align-items: center;
+  display: flex;
+  flex: 0 1 310px;
+  height: 306px;
+  justify-content: center;
+  position: relative;
+  width: 310px;
+}
+.traffic__progress svg {
+  filter: drop-shadow(-2px -2px 16px rgba(0, 6, 17, 0.3)) drop-shadow(2px 2px 16px rgba(255, 255, 255, 0.3));
+  height: 400px;
+  left: -9px;
+  position: absolute;
+  top: -30px;
+  width: 400px;
+}
+.traffic__progress svg circle {
+  fill: none;
+  stroke-width: 31;
+  stroke: #7c4eff;
+  stroke-dashoffset: 1079;
+  stroke-dasharray: 1080;
+  stroke-linecap: round;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: rotate(135deg);
+}
+.traffic__progress-gb {
+  position: absolute;
   font-weight: 800;
-  font-size: 42px;
-  line-height: 51px;
-  color: #202027;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 48px;
+  line-height: 59px;
   text-align: center;
+  color: #7c4eff;
+  top: 107px;
 }
-.title__span {
-  color: #16e09e;
+.traffic__progress-gb::after {
+  content: "";
+  background: #d1c8fb;
+  border-radius: 6px;
+  bottom: -16px;
+  height: 3px;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%);
+  width: 32px;
+}
+.traffic__progress-price {
+  position: absolute;
+  bottom: 75px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #7c4eff;
+}
+.traffic__button {
+  text-align: center;
 }
 
-.btn {
-  padding: 17px 40px;
-  background: linear-gradient(230.52deg, #926bff 21.73%, #7c4eff 72.58%);
-  box-shadow: 0px 8px 6px -6px rgba(86, 76, 234, 0.6), 0px 14px 12px -8px rgba(86, 76, 234, 0.6), 0px 22px 24px -16px rgba(86, 76, 234, 0.6);
-  border-radius: 12px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 22px;
-  text-align: center;
-  letter-spacing: 0.02em;
-  font-variant: small-caps;
-  color: #ffffff;
+#selector {
+  height: 50px;
+  width: 36px;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.select-button {
+  height: 36px;
+  width: 36px;
+  background-image: url(../images/progressbar-selector.png);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  bottom: 0;
 }/*# sourceMappingURL=style.css.map */

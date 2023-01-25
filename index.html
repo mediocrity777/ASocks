@@ -375,11 +375,51 @@
 				</div>
 			</div>
 		</section>
+
+		<section class="traffic">
+			<div class="container">
+				<div class="traffic__container">
+					<div class="traffic__body">
+						<div class="traffic__info">
+							<h3 class="traffic__title title">
+								Pay as you go — pay only for
+								the traffic you <span class="title__span">actually use</span>
+							</h3>
+							<p class="traffic__text">
+								No verification needed. All it takes is 1 minute to sign up and
+								start using our proxies.
+							</p>
+							<div class="traffic__slider">
+								<div class="traffic__color-fill" style="clip-path: polygon(0px 0px, 0% 0px, 0% 100%, 0% 100%)"></div>
+								<input class="traffic__range" type="range" value="1" min="1" max="999">
+								<div class="traffic__range-gb">1Gb</div>
+								<div class="traffic__range-price">3$</div>
+								<div id="selector">
+									<div class="select-button"></div>
+								</div>
+							</div>
+						</div>
+						<div class="traffic__progress">
+							<img class="traffic__progress-img" src="./images/progress.png" alt="progress">
+							<div class="traffic__progress-gb">1Gb</div>
+							<div class="traffic__progress-price">3$</div>
+							<svg>
+								<circle id="circle" cx="23" cy="-255" r="140"></circle>
+							</svg>
+						</div>
+					</div>
+					<div class="traffic__button">
+						<button class="traffic__btn btn">Got it!</button>
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
 
 	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 	<script src="./scripts/main.js"></script>
 	<script src="./scripts/slider.js"></script>
+	<script src="./scripts/progressBar.js"></script>
 </body>
 
 </html>
