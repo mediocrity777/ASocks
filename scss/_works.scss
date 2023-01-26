@@ -1,0 +1,40 @@
+.works {
+	margin-bottom: 200px;
+	text-align: center;
+	&__title {
+		margin-bottom: 80px;
+	}
+
+	&__form-search {
+		color: #7c4eff;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 24px;
+		padding: 14px 55px 14px 25px;
+		background: rgba(0, 14, 34, 0.06);
+		backdrop-filter: blur(10px);
+		border-radius: 12px;
+		border: none;
+		margin-bottom: 16px;
+		width: 400px;
+		position: relative;
+		left: 15px;
+	}
+
+	&__form-btn {
+		position: relative;
+		right: 30px;
+		top: -2px;
+	}
+
+	&__text {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 150%;
+		color: #727d99;
+	}
+
+	&__text span {
+		color: #7c4eff;
+	}
+}

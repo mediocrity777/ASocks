@@ -1,0 +1,47 @@
+.trial {
+	margin-bottom: 200px;
+	&__container {
+		background-image: url(/images/trial-bg.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		border-radius: 48px;
+		max-width: 1200px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 78px 64px;
+		position: relative;
+	}
+
+	&__body-subtitle {
+		text-align: left;
+		text-shadow: none;
+		margin-bottom: 24px;
+	}
+
+	&__body-text {
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 150%;
+		margin-bottom: 50px;
+	}
+
+	&__img {
+		position: absolute;
+		top: -50px;
+		right: -40px;
+		animation: try-image 2s ease-in-out infinite;
+	}
+}
+
+@keyframes try-image {
+	0% {
+		transform: translate(0);
+	}
+	50% {
+		transform: translateY(20px);
+	}
+	100% {
+		transform: translate(0);
+	}
+}

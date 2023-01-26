@@ -1,0 +1,30 @@
+.coverage {
+	margin-bottom: 200px;
+	&__title {
+		margin-bottom: 80px;
+	}
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 0 40px;
+	}
+
+	&__img {
+		width: 100%;
+	}
+
+	&__body-title {
+		color: #485064;
+		font-size: 24px;
+		line-height: 130%;
+		margin-bottom: 8px;
+		text-shadow: none;
+		text-align: left;
+	}
+
+	&__body-text {
+		color: #202027;
+	}
+}
