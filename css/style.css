@@ -623,6 +623,11 @@ body {
   color: #ffffff;
 }
 
+.btn:hover {
+  opacity: 0.7;
+  transition: all 0.3s ease 0s;
+}
+
 .header__container {
   display: flex;
   justify-content: space-between;
@@ -640,6 +645,10 @@ body {
   font-variant: small-caps;
   line-height: 20px;
   letter-spacing: 0.01em;
+}
+.menu__list-link:hover {
+  transition: all 0.2s;
+  color: #7c4eff;
 }
 
 .mainscreen {
@@ -1084,16 +1093,22 @@ body {
   border-radius: 12px;
   position: relative;
 }
-.partners__btn::after {
+.partners__btn:hover {
+  background-color: #7c4eff;
+  color: #fff;
+  transition: all 0.3s;
+}
+.partners__btn svg {
   content: "";
   position: absolute;
-  background-image: url(/images/arrow.svg);
-  background-repeat: no-repeat;
-  background-position: center;
   width: 8px;
   height: 10px;
   right: 24px;
   top: 22px;
+}
+.partners__btn:hover svg path {
+  transition: all 0.4s;
+  stroke: #fff;
 }
 
 .swiper-slide-active {
@@ -1220,7 +1235,6 @@ body {
 }
 .traffic__range::-webkit-slider-thumb {
   -webkit-appearance: none;
-  -moz-appearance: none;
   cursor: pointer;
   z-index: 3;
   width: 36px;

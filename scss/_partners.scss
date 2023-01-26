@@ -52,16 +52,24 @@
 		position: relative;
 	}
 
-	&__btn::after {
+	&__btn:hover {
+		background-color: #7c4eff;
+		color: #fff;
+		transition: all 0.3s;
+	}
+
+	&__btn svg {
 		content: "";
 		position: absolute;
-		background-image: url(/images/arrow.svg);
-		background-repeat: no-repeat;
-		background-position: center;
 		width: 8px;
 		height: 10px;
 		right: 24px;
 		top: 22px;
+	}
+
+	&__btn:hover svg path {
+		transition: all 0.4s;
+		stroke: #fff;
 	}
 }
 
