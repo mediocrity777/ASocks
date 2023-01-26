@@ -1,5 +1,6 @@
 .features {
 	margin-bottom: 200px;
+	position: relative;
 	&__title {
 		margin-bottom: 80px;
 	}
@@ -37,4 +38,16 @@
 		line-height: 150%;
 		color: #202027;
 	}
+}
+
+.features::before {
+	content: "";
+	background: url(../images/bg-circle.svg);
+	background-repeat: no-repeat;
+	position: absolute;
+	z-index: -1;
+	width: 684px;
+	height: 684px;
+	left: -16%;
+	top: -50%;
 }

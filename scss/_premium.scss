@@ -95,7 +95,7 @@
 
 .premium::before {
 	content: "";
-	background: url(../images/circles-right.svg);
+	background: url(../images/bg-circle.svg);
 	background-repeat: no-repeat;
 	position: absolute;
 	z-index: -1;
@@ -107,7 +107,7 @@
 
 .premium::after {
 	content: "";
-	background: url(../images/circles-right.svg);
+	background: url(../images/bg-circle.svg);
 	background-repeat: no-repeat;
 	position: absolute;
 	z-index: -1;

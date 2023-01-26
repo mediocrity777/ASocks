@@ -1,5 +1,6 @@
 .proxy {
 	margin-bottom: 200px;
+	position: relative;
 	&__title {
 		margin-bottom: 80px;
 	}
@@ -192,4 +193,16 @@
 		color: #f9fbfd;
 		display: none;
 	}
+}
+
+.proxy::after {
+	content: "";
+	background: url(../images/bg-circle.svg);
+	background-repeat: no-repeat;
+	position: absolute;
+	z-index: -1;
+	width: 684px;
+	height: 684px;
+	right: -15%;
+	top: 60%;
 }

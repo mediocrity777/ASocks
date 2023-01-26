@@ -1,5 +1,6 @@
 .footer {
 	padding: 48px 0px 24px;
+	position: relative;
 	background-color: #202027;
 	&__top {
 		display: flex;
@@ -99,4 +100,16 @@
 		display: flex;
 		gap: 0 24px;
 	}
+}
+
+.footer::before {
+	content: "";
+	background: url(../images/bg-circle.svg);
+	background-repeat: no-repeat;
+	position: absolute;
+	z-index: -1;
+	width: 684px;
+	height: 684px;
+	right: 32%;
+	top: -70%;
 }

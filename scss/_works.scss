@@ -1,6 +1,7 @@
 .works {
 	margin-bottom: 200px;
 	text-align: center;
+	position: relative;
 	&__title {
 		margin-bottom: 80px;
 	}
@@ -37,4 +38,16 @@
 	&__text span {
 		color: #7c4eff;
 	}
+}
+
+.works::before {
+	content: "";
+	background: url(../images/bg-circle.svg);
+	background-repeat: no-repeat;
+	position: absolute;
+	z-index: -1;
+	width: 684px;
+	height: 684px;
+	right: 32%;
+	top: -80%;
 }

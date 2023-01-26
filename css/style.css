@@ -803,7 +803,7 @@ body {
 
 .premium::before {
   content: "";
-  background: url(../images/circles-right.svg);
+  background: url(../images/bg-circle.svg);
   background-repeat: no-repeat;
   position: absolute;
   z-index: -1;
@@ -815,7 +815,7 @@ body {
 
 .premium::after {
   content: "";
-  background: url(../images/circles-right.svg);
+  background: url(../images/bg-circle.svg);
   background-repeat: no-repeat;
   position: absolute;
   z-index: -1;
@@ -827,6 +827,7 @@ body {
 
 .proxy {
   margin-bottom: 200px;
+  position: relative;
 }
 .proxy__title {
   margin-bottom: 80px;
@@ -1024,6 +1025,18 @@ body {
   display: none;
 }
 
+.proxy::after {
+  content: "";
+  background: url(../images/bg-circle.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -1;
+  width: 684px;
+  height: 684px;
+  right: -15%;
+  top: 60%;
+}
+
 .partners {
   text-align: center;
   margin-bottom: 200px;
@@ -1107,6 +1120,7 @@ body {
 
 .features {
   margin-bottom: 200px;
+  position: relative;
 }
 .features__title {
   margin-bottom: 80px;
@@ -1141,8 +1155,21 @@ body {
   color: #202027;
 }
 
+.features::before {
+  content: "";
+  background: url(../images/bg-circle.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -1;
+  width: 684px;
+  height: 684px;
+  left: -16%;
+  top: -50%;
+}
+
 .traffic {
   margin-bottom: 200px;
+  position: relative;
 }
 .traffic__container {
   padding: 80px;
@@ -1303,6 +1330,18 @@ body {
   bottom: 0;
 }
 
+.traffic::before {
+  content: "";
+  background: url(../images/bg-circle.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -1;
+  width: 684px;
+  height: 684px;
+  right: 2%;
+  top: -55%;
+}
+
 .coverage {
   margin-bottom: 200px;
 }
@@ -1333,6 +1372,7 @@ body {
 .works {
   margin-bottom: 200px;
   text-align: center;
+  position: relative;
 }
 .works__title {
   margin-bottom: 80px;
@@ -1366,6 +1406,18 @@ body {
 }
 .works__text span {
   color: #7c4eff;
+}
+
+.works::before {
+  content: "";
+  background: url(../images/bg-circle.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -1;
+  width: 684px;
+  height: 684px;
+  right: 32%;
+  top: -80%;
 }
 
 .trial {
@@ -1427,6 +1479,7 @@ body {
 }
 .footer {
   padding: 48px 0px 24px;
+  position: relative;
   background-color: #202027;
 }
 .footer__top {
@@ -1512,4 +1565,16 @@ body {
 .footer__bottom-socials {
   display: flex;
   gap: 0 24px;
+}
+
+.footer::before {
+  content: "";
+  background: url(../images/bg-circle.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -1;
+  width: 684px;
+  height: 684px;
+  right: 32%;
+  top: -70%;
 }/*# sourceMappingURL=style.css.map */

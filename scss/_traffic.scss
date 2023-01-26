@@ -1,5 +1,6 @@
 .traffic {
 	margin-bottom: 200px;
+	position: relative;
 	&__container {
 		padding: 80px;
 		background: #f3f5f8;
@@ -178,4 +179,16 @@
 	background-position: center;
 	position: absolute;
 	bottom: 0;
+}
+
+.traffic::before {
+	content: "";
+	background: url(../images/bg-circle.svg);
+	background-repeat: no-repeat;
+	position: absolute;
+	z-index: -1;
+	width: 684px;
+	height: 684px;
+	right: 2%;
+	top: -55%;
 }
