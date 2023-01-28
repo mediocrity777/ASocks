@@ -7,6 +7,26 @@
 	}
 }
 
+.menu-btn {
+	position: relative;
+	width: 32px;
+	height: 26px;
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	overflow: hidden;
+	cursor: pointer;
+
+	& span {
+		width: 32px;
+		height: 2px;
+		background-color: #485064;
+	}
+	display: none;
+	order: -1;
+}
+
 .menu {
 	&__list {
 		display: flex;
@@ -24,5 +44,28 @@
 	&__list-link:hover {
 		transition: all 0.2s;
 		color: #7c4eff;
+	}
+}
+
+@media (max-width: 768px) {
+	.header {
+	}
+
+	.menu-btn {
+		display: flex;
+	}
+
+	.menu {
+		display: block;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		transform: translateX(-100%);
+	}
+
+	.menu.menu--active {
+		transform: translateX(0);
 	}
 }
