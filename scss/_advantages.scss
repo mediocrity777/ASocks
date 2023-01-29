@@ -1,15 +1,23 @@
 .advantages {
 	margin-bottom: 200px;
 	&__list {
-		padding: 36px 15px;
 		display: flex;
-		justify-content: center;
 		align-items: center;
+		text-align: center;
+		padding: 36px 100px;
 		background: #f3f5f8;
 		box-shadow: 0px 16px 32px -6px rgba(7, 0, 28, 0.02), 0px 8px 16px -3px rgba(7, 0, 28, 0.03),
 			0px 4px 8px -1px rgba(7, 0, 28, 0.03);
 		border-radius: 24px;
-		text-align: center;
+		flex-wrap: wrap;
+	}
+
+	&__list-item {
+		flex: 0 1 25%;
+	}
+
+	&__list-item:not(:last-child) {
+		border-right: 1px solid #e6e3f9;
 	}
 
 	&__list dt {
@@ -17,20 +25,61 @@
 		font-size: 32px;
 		line-height: 39px;
 		color: #485064;
+		padding-bottom: 4px;
 	}
 
 	&__list dd {
+		font-weight: 400;
+		font-size: 16px;
 		line-height: 140%;
+		color: #202027;
 	}
+}
 
-	&__list div {
-		padding: 0 85px;
-		border-right: 2px solid rgba(209, 200, 251, 0.4);
-		border-radius: 2px;
-		height: 87px;
+@media (max-width: 1100px) {
+	.advantages {
+		&__list {
+			padding: 36px 50px;
+		}
+
+		&__list-item {
+			border-right: none !important;
+		}
+
+		&__list-item--1 {
+			flex: 1 1 100%;
+			border-bottom: 1px solid #e6e3f9;
+			padding-bottom: 14px;
+		}
+
+		&__list-item--2 {
+			flex: 0 1 50%;
+			margin: 24px 0;
+			border-right: 1px solid #e6e3f9 !important;
+		}
+		&__list-item--3 {
+			flex: 0 1 50%;
+			margin: 24px 0;
+		}
+		&__list-item--4 {
+			flex: 1 1 100%;
+			border-top: 1px solid #e6e3f9;
+			padding-top: 14px;
+		}
 	}
+}
 
-	&__list div:last-child {
-		border: none;
+@media (max-width: 768px) {
+	.advantages {
+		&__list {
+			padding: 36px;
+		}
+		&__list dt {
+			font-size: 26px;
+			line-height: 32px;
+		}
+		&__list dd {
+			font-size: 14px;
+		}
 	}
 }

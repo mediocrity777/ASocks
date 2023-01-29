@@ -98,3 +98,29 @@
 		}
 	}
 }
+
+@media (max-width: 600px) {
+	.mainscreen {
+		&__title {
+			font-size: 38px;
+			line-height: 36px;
+		}
+		&__text {
+			font-size: 16px;
+			margin-bottom: 28px;
+		}
+	}
+}
+
+@media (max-width: 420px) {
+	.mainscreen {
+		&__title {
+			font-size: 32px;
+		}
+
+		&__text {
+			font-size: 14px;
+			margin-bottom: 20px;
+		}
+	}
+}
