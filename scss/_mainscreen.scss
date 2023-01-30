@@ -83,6 +83,9 @@
 
 @media (max-width: 768px) {
 	.mainscreen {
+		&__title {
+			max-width: 500px;
+		}
 		&__container {
 			justify-content: center;
 			text-align: center;
