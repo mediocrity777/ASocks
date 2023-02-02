@@ -7,5 +7,5 @@ proxyItemsList.forEach(proxyItem => {
 		});
 		proxyItem.classList.add('proxy__item--active');
 	});
-});
 
+});
