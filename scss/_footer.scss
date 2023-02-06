@@ -8,6 +8,10 @@
 		margin-bottom: 72px;
 	}
 
+	&__support {
+		flex-basis: 400px;
+	}
+
 	&__logo {
 		display: block;
 		margin-bottom: 24px;
@@ -54,7 +58,8 @@
 
 	&__info {
 		display: flex;
-		gap: 0 120px;
+		flex-basis: 600px;
+		justify-content: space-between;
 	}
 
 	&__info-title {
@@ -112,4 +117,77 @@
 	height: 684px;
 	right: 32%;
 	top: -70%;
+}
+
+@media (max-width: 992px) {
+	.footer {
+		&__top {
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+		&__support {
+			justify-content: center;
+			margin-bottom: 30px;
+		}
+		&__support-list {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		&__logo {
+			text-align: center;
+		}
+		&__list {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			max-width: 500px;
+			gap: 0 20px;
+		}
+		&__list-item {
+			display: flex;
+		}
+		&__list-item a {
+			padding-left: 32px;
+		}
+		&__bottom {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		&__bottom-text {
+			margin-right: 20px;
+			order: 1;
+			text-align: center;
+		}
+		&__bottom-socials {
+			flex-basis: 350px;
+			margin-bottom: 25px;
+			justify-content: space-between;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.footer {
+		&__support {
+			margin-bottom: 25px;
+		}
+		&__info {
+			display: none;
+		}
+		&__top {
+			margin-bottom: 0;
+		}
+		&__bottom {
+			padding-top: 25px;
+		}
+		&__bottom-text {
+			margin-right: 0;
+		}
+		&__bottom-socials {
+			flex-basis: 175px;
+			flex-wrap: wrap;
+			gap: 15px 24px;
+		}
+	}
 }

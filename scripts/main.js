@@ -9,3 +9,12 @@ proxyItemsList.forEach(proxyItem => {
 	});
 
 });
+
+const screenWidth = window.innerWidth;
+if (screenWidth < 1100) {
+	let trafficProgress = document.querySelector('.traffic__progress');
+	let trafficSlider = document.querySelector('.traffic__slider');
+	let trafficInfo = trafficSlider.parentNode;
+
+	trafficInfo.insertBefore(trafficProgress, trafficSlider);
+}

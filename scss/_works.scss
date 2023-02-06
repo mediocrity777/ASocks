@@ -9,7 +9,7 @@
 	&__form-search {
 		color: #7c4eff;
 		font-weight: 500;
-		font-size: 20px;
+		font-size: 18px;
 		line-height: 24px;
 		padding: 14px 55px 14px 25px;
 		background: rgba(0, 14, 34, 0.06);
@@ -50,4 +50,25 @@
 	height: 684px;
 	right: 32%;
 	top: -80%;
+}
+
+@media (max-width: 768px) {
+	.works {
+		margin-bottom: 70px;
+		&__title {
+			margin-bottom: 40px;
+		}
+		&__form-search {
+			width: 260px;
+			padding: 14px 50px 14px 15px;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.works {
+		&__form-search {
+			width: 180px;
+		}
+	}
 }

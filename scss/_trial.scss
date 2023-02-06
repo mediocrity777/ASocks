@@ -45,3 +45,78 @@
 		transform: translate(0);
 	}
 }
+
+@media (max-width: 992px) {
+	.trial {
+		&__img {
+			width: 260px;
+			top: 30px;
+		}
+	}
+}
+
+@media (max-width: 810px) {
+	.trial {
+		&__img {
+			top: -70px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.trial {
+		margin-bottom: 70px;
+		&__container {
+			padding: 50px;
+		}
+		& .title {
+			margin: 0;
+		}
+		&__img {
+			width: 200px;
+		}
+		&__body-text {
+			font-size: 18px;
+			margin-bottom: 25px;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.trial {
+		&__container {
+			padding: 30px;
+		}
+		&__img {
+			width: 170px;
+			top: -100px;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	.trial {
+		&__container {
+			padding: 20px;
+		}
+		&__img {
+			width: 150px;
+			top: -90px;
+		}
+		&__body-subtitle {
+			font-size: 28px;
+		}
+		&__body-text {
+			font-size: 14px;
+		}
+	}
+}
+
+@media (max-width: 360px) {
+	.trial {
+		&__img {
+			width: 130px;
+			top: -70px;
+		}
+	}
+}

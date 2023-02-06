@@ -52,7 +52,7 @@
 
 	&__item-img::before {
 		content: "";
-		background-image: url(/images/proxy__circle.png);
+		background-image: url(../images/proxy__circle.png);
 		background-repeat: no-repeat;
 		position: absolute;
 		width: 160px;
@@ -86,7 +86,7 @@
 
 	&__item-img::after {
 		content: "";
-		background-image: url(/images/proxy__smallcircle.png);
+		background-image: url(../images/proxy__smallcircle.png);
 		background-repeat: no-repeat;
 		position: absolute;
 		width: 24px;
@@ -124,7 +124,7 @@
 	}
 
 	&__item-img--image-6::before {
-		background-image: url(/images/proxy-circle-6.png);
+		background-image: url(../images/proxy-circle-6.png);
 		width: 45px;
 		height: 45px;
 		top: 5px;
@@ -142,7 +142,7 @@
 	}
 
 	&__item-img--image-8::before {
-		background-image: url(/images/proxy-circle-8.png);
+		background-image: url(../images/proxy-circle-8.png);
 		width: 52px;
 		height: 52px;
 		left: 30px;
