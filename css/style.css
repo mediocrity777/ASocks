@@ -1229,17 +1229,8 @@ body {
 .proxy__item--active .proxy__item-text, .proxy__item.swiper-slide-active .proxy__item-text {
   display: block;
   opacity: 1;
-  -webkit-animation: fadeInFromNone 0.5s ease-out;
-          animation: fadeInFromNone 0.5s ease-out;
+  animation: fadeInFromNone 0.5s ease-out;
   height: 85px;
-}
-@-webkit-keyframes fadeInFromNone {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 @keyframes fadeInFromNone {
   0% {
@@ -1966,7 +1957,7 @@ body {
   margin-bottom: 200px;
 }
 .trial__container {
-  background-image: url(/images/trial-bg.png);
+  background-image: url(../images/trial-bg.png);
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 48px;
@@ -1992,20 +1983,7 @@ body {
   position: absolute;
   top: -50px;
   right: -40px;
-  -webkit-animation: try-image 2s ease-in-out infinite;
-          animation: try-image 2s ease-in-out infinite;
-}
-
-@-webkit-keyframes try-image {
-  0% {
-    transform: translate(0);
-  }
-  50% {
-    transform: translateY(20px);
-  }
-  100% {
-    transform: translate(0);
-  }
+  animation: try-image 2s ease-in-out infinite;
 }
 
 @keyframes try-image {
