@@ -46,14 +46,14 @@
 	}
 
 	&__support-item:nth-child(1) a::before {
-		background-image: url(/images/icons/sms.png);
+		background-image: url(../images/icons/sms.png);
 		background-size: cover;
 	}
 	&__support-item:nth-child(2) a::before {
-		background-image: url(/images/icons/call.png);
+		background-image: url(../images/icons/call.png);
 	}
 	&__support-item:nth-child(3) a::before {
-		background-image: url(/images/icons/tg.png);
+		background-image: url(../images/icons/tg.png);
 	}
 
 	&__info {

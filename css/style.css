@@ -2097,14 +2097,14 @@ body {
   left: 0;
 }
 .footer__support-item:nth-child(1) a::before {
-  background-image: url(/images/icons/sms.png);
+  background-image: url(../images/icons/sms.png);
   background-size: cover;
 }
 .footer__support-item:nth-child(2) a::before {
-  background-image: url(/images/icons/call.png);
+  background-image: url(../images/icons/call.png);
 }
 .footer__support-item:nth-child(3) a::before {
-  background-image: url(/images/icons/tg.png);
+  background-image: url(../images/icons/tg.png);
 }
 .footer__info {
   display: flex;
